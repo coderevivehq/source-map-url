@@ -1,6 +1,6 @@
 {
   name: "source-map-url",
-  version: "0.4.1",
+  version: "0.4.2",
   author: "Simon Lydell",
   license: "MIT",
   description: "Tools for working with sourceMappingURL comments.",
@@ -13,34 +13,26 @@
   main: "source-map-url.js",
   overlay: {
     npm: {
-      repository: "lydell/source-map-url",
+      name: "@coderevivehq/source-map-url",
+      repository: "coderevivehq/source-map-url",
+      bugs: "https://github.com/coderevivehq/source-map-url/issues",
+      homepage: "https://github.com/coderevivehq/source-map-url#readme",
+      publishConfig: {
+        access: "public"
+      },
+      engines: {
+        node: ">=18"
+      },
+      files: ["source-map-url.js"],
       scripts: {
-        lint: "jshint source-map-url.js test/ ",
-        unit: "mocha",
+        lint: "node --check source-map-url.js && node --check test/source-map-url.js",
+        unit: "node --test",
         test: "npm run lint && npm run unit"
       },
-      devDependencies: {
-        "mocha": "~1.17.1",
-        "expect.js": "~0.3.1",
-        "jshint": "~2.4.3"
-      },
-      testling: {
-        harness: "mocha",
-        files: "test/*.js",
-        browsers: [
-          "ie/8..latest",
-          "chrome/latest",
-          "firefox/latest",
-          "opera/12",
-          "opera/latest",
-          "safari/5",
-          "iphone/6",
-          "android-browser/4"
-        ]
-      }
+      devDependencies: {}
     },
     component: {
-      repo: "lydell/source-map-url",
+      repo: "coderevivehq/source-map-url",
       scripts: [
         "source-map-url.js"
       ]

@@ -1,3 +1,14 @@
+### Version 0.4.2 (2026-09-11) ###
+
+- Fixed: The public helper methods no longer treat source-map-comment text
+  inside single-quoted strings, double-quoted strings, or template literals as
+  an actual `sourceMappingURL` comment.
+- Changed: The npm package is published as
+  `@coderevivehq/source-map-url` by CodeRevive.
+- Changed: The test suite now runs on supported Node.js releases without
+  legacy test dependencies.
+
+
 ### Version 0.4.1 (2021-02-01) ###
 
 - Improved: The package is now about 50% smaller, by excluding unnecessary

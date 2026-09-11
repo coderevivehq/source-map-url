@@ -1,6 +1,6 @@
 {
   "name": "source-map-url",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "author": "Simon Lydell",
   "license": "MIT",
   "description": "Tools for working with sourceMappingURL comments.",
@@ -11,7 +11,7 @@
     "annotation"
   ],
   "main": "source-map-url.js",
-  "repo": "lydell/source-map-url",
+  "repo": "coderevivehq/source-map-url",
   "scripts": [
     "source-map-url.js"
   ]
