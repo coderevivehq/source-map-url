@@ -9,6 +9,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/coderevivehq/source-map-url/actions/workflows/ci.yml"><img alt="build status" src="https://github.com/coderevivehq/source-map-url/actions/workflows/ci.yml/badge.svg"></a>
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/github/license/coderevivehq/source-map-url?style=flat-square"></a>
 </p>
 
